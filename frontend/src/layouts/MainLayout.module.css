@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #e0e9f7;
+  background-color: #011838;
+}
+
+.sidebarArea {
+  width: 290px;
+  height: 100%;
+  background-color: #19254a;
+  box-shadow: 8px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.sidebarClosed {
+  width: 0;
+  box-shadow: none;
+}
+
+.sidebarInner {
+  width: 290px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  flex-shrink: 0;
+}
+
+.sidebarInnerClosed {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  z-index: 30;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 6px;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+.openBtn {
+  position: absolute;
+  top: 7px;
+  left: 16px;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #e0e9f7;
+  transition: color 0.2s;
+}
+
+.contentArea {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  background-color: #011838;
+}
+
+.mainBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-y: auto;
+  padding: 0 24px;
+}
