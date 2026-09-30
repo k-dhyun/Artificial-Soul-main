@@ -47,7 +47,7 @@ export default function NotebookTree() {
           <div key={folder.id}>
             <div className={styles.folderHeader} onClick={() => toggleFolder(folder.id)}>
               <div className={styles.folderLeft}>
-                <Folder size={15} color={folder.isOpen ? "#38bdf8" : "#94a3b8"} />
+                <Folder size={15} color="#94a3b8" />
                 <span className={folder.isOpen ? styles.folderTitleActive : styles.folderTitle}>{folder.title}</span>
               </div>
               <div className={styles.folderRight}>

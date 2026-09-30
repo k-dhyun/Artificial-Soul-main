@@ -12,7 +12,7 @@
 .logoSection {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 5px;
   padding: 10px 0px;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .logoTitle {
-  font-size: 27px;
+  font-size: 24px;
   font-weight: 600;
   color: #b4c0e8;
 }
@@ -53,12 +53,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 14px;
+  padding: 12px 14px;
   border-radius: 6px;
   background: none;
   border: none;
   color: #e0e9f7;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
   width: 100%;
   transition:
@@ -85,17 +85,16 @@
 .arrowIcon {
   color: #64748b;
 }
+
 .accordionWrapper {
   display: grid;
   grid-template-rows: 1fr;
   transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0 12px;
   min-height: 0;
-  /* 하단 카드 바로 위까지만 최대 확장되고, 내용이 적으면 딱 내용만큼만 차지 */
   max-height: 100%;
 }
 
-/* 닫혔을 때 높이를 0fr로 수축 */
 .accordionClosed {
   grid-template-rows: 0fr;
   padding-top: 0;
@@ -109,7 +108,6 @@
   flex-direction: column;
 }
 
-/* 🌟 노트북 카드 서랍 (내용 높이 맞춤 + 최대치 도달 시 내부 스크롤) */
 .notebookDrawer {
   display: flex;
   flex-direction: column;
@@ -119,27 +117,22 @@
   background-color: #011838;
   border-radius: 0 0 17px 17px;
   box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.4);
-  padding: 10px 8px;
+  padding: 5px 3px;
   overflow: hidden;
   margin-bottom: 8px;
 }
 
-/* 🌟 하단 고정 영역: margin-top: auto로 남은 공간의 맨 밑으로 밀착 */
 .bottomSection {
   margin-top: auto;
-  padding: 12px 14px 60px 14px;
+  padding: 12px 14px 20px 14px;
   flex-shrink: 0;
-}
-
-.bottomSection {
-  padding: 12px 14px 60px 14px;
 }
 
 .bottomCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 16px;
+  padding: 15px 16px;
   border-radius: 10px;
   background-color: #011838;
   cursor: pointer;
