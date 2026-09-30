@@ -1,0 +1,99 @@
+.container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(1, 24, 56, 0) 0%, rgba(1, 24, 56, 0.7) 40%, #011838 85%);
+
+  padding-top: 36px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 20;
+  pointer-events: none;
+}
+
+.inputCard {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px 12px 20px;
+  background-color: #012467;
+  border-radius: 56px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+
+  pointer-events: auto;
+}
+
+.inputCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 14px 12px 20px;
+  background-color: #012467;
+  border-radius: 56px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.inputField {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e0e9f7;
+}
+
+.inputField::placeholder {
+  color: #225ca2;
+  font-size: 16px;
+}
+
+.subHint {
+  font-size: 13px;
+  color: #194e93;
+  margin-top: 2px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.sendButton {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #2563eb;
+  border: none;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition:
+    background-color 0.15s,
+    transform 0.1s;
+}
+
+.sendButton:hover {
+  background-color: #1d4ed8;
+}
+
+.sendButton:active {
+  transform: scale(0.95);
+}

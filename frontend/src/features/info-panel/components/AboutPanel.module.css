@@ -1,0 +1,94 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 680px;
+  margin: auto 0;
+  padding: 40px 16px 100px 16px;
+  user-select: none;
+}
+
+.aboutSection {
+  width: 100%;
+  margin-bottom: 36px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.starIcon {
+  width: 18px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.sectionTitle {
+  font-size: 17px;
+  color: #7896c5;
+}
+
+.aboutDesc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #7896c5;
+  word-break: keep-all;
+}
+
+.featuresSection {
+  width: 100%;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.featureCard {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 4px;
+}
+
+.cardIconBox {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.featureIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardTextBox {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cardTitle {
+  font-size: 13.5px;
+  color: #7896c5;
+}
+
+.cardDesc {
+  font-size: 11px;
+  color: #657ea7;
+}
