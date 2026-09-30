@@ -1,0 +1,1 @@
+"""Artificial Soul backend application."""

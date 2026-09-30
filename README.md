@@ -1,12 +1,14 @@
 # Artificial-Soul-main
 2026년 2학기 AI팀 메인 레포지토리입니다
 
+백엔드 개발환경 실행 방법은 [Backend README](backend/README.md)를 참고하세요.
+
 ---
 ## 프로젝트 소개:
 
-Artificial Soul은 자연어 처리(NLP)와 대규모 언어 모델(LLM)의 내부 아키텍처를 심층적으로 탐구하는 것을 목표로 하는 학생 주도의 연구·개발(R&D) 프로젝트입니다.
+Artificial Soul은 대학 관련 TXT 지식 데이터를 검색하고, 검색된 근거를 바탕으로 기존 LLM이 답변하는 **RAG 기반 대학 정보 AI Assistant**입니다. 사용자는 텍스트로 질문하고 답변과 출처를 확인합니다.
 
-본 프로젝트는 단순히 기존의 솔루션이나 외부 API를 활용하는 데 그치지 않고, 신경망의 내부 동작 원리를 중심으로 연구합니다. 구체적으로 어텐션 메커니즘(Attention Mechanisms), 임베딩(Embeddings)의 작동 원리, 텍스트 생성 과정, 그리고 오픈소스 모델의 파인튜닝(Fine-tuning) 방법 등을 학습하고 실험하며, NLP 및 LLM의 핵심 기술에 대한 이론적·실질적 이해를 심화하는 것을 목표로 합니다.
+MVP의 핵심은 **User + Chat/Message + RAG**입니다. FastAPI와 PostgreSQL로 서비스 데이터를 관리하고, Qdrant에는 TXT에서 만든 Chunk의 Vector와 Payload를 저장합니다. 팀이 준비한 TXT를 미리 인덱싱하며, Fine-tuning·자체 모델 학습·이미지 처리·사용자 파일 업로드는 MVP 범위에서 제외합니다.
 
 ---
 ## 팀원들 개요:
@@ -20,7 +22,5 @@ Artificial Soul은 자연어 처리(NLP)와 대규모 언어 모델(LLM)의 내�
 이승아 (백엔드 개발자) - FastAPI 비동기 서버 구축, 벡터 DB 연동, 모델 오케스트레이션
 
 이채린 (프론트엔드 개발자) - React/Next.js UI 구현, 스트리밍 응답 연동, API 통신
-
-이시연 (NLP 개발자) - 데이터 생성, RAG·벡터 검색 실험, 임베딩 튜닝, 답변 품질 평가(LLM Evaluation)
 
 ---
